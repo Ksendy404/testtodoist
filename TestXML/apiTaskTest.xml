@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Task tests">
+
+    <test name="Create task without not required parameters">
+        <classes>
+            <class name="com.todoist.api.test.TaskTest">
+                <methods>
+                    <include name="testCreateTaskWithoutNotRequiredParameters"/>
+                    <include name="testCreateTaskWithoutRequiredParameter"/>
+                    <include name="testCreateTaskWithSpecialSymbols"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
